@@ -1,0 +1,17 @@
+- insert:
+    - id: dsh-thesis-editor
+      name: dsh-thesis-editor
+      config: {}
+    - id: preset-thesis-writing
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: thesis-writing
+        name: 论文模式
+        description: 在本地编辑 LaTeX、排版和预览 PDF，按需与 DeepSeek 对话。
+        order: 25
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: You help the student typeset LaTeX papers. Propose changes for review and never invent citations.
+              includeRuntimeContext: false

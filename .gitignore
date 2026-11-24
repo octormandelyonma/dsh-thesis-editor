@@ -1,0 +1,8 @@
+node_modules/
+client.js
+release/
+*.tgz
+*.log
+.env
+.env.*
+.folio/
