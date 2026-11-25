@@ -4,6 +4,20 @@ DeepSeek Harness 插件。Windows 桌面版把模式和项目名放在「应用�
 
 ## 安装
 
+### 从 npm 安装
+
+`dsh-thesis-editor@0.2.8` 已发布到 [npm](https://www.npmjs.com/package/dsh-thesis-editor)。用 DSH 的 CLI 安装到桌面版。将命令中的路径替换为自己的 DSH 安装路径。
+
+```powershell
+& 'D:/DSH/resources/runtime/cli/bin/dsh.cmd' plugin --profile desktop add 'dsh-thesis-editor@0.2.8'
+```
+
+使用 DSH Web 时，把 `--profile desktop` 改为 `--profile web`。安装后完全退出并重新打开 DSH。本机需安装 TeX Live 或 MiKTeX 才能编译论文。
+
+### 从 GitHub 安装包安装
+
+在 [GitHub Releases](https://github.com/octormandelyonma/dsh-thesis-editor/releases/latest) 下载当前版本的安装包。
+
 1. 如果下载的是安装 ZIP，先解压。在 DSH 桌面版打开「插件 → 添加插件」，选择解压后得到的 `dsh-thesis-editor-0.2.8.tgz`。如果当前界面要求输入安装目标，粘贴该文件的完整路径。
 2. 如果 DSH 提示重启，完全退出后重新打开。在侧栏点击「论文模式」，或者在新会话的模式下拉菜单选择「论文模式」。
 3. 新建中文文稿，或者导入学校提供的 ZIP／项目文件夹。插件调用本机已有的 TeX 引擎。可在文稿库点击 TeX 状态查看检测结果，必要时选择 TeX 的 bin 目录。DSH 如果提示登录或设置模型，只需本地写作时可以关闭提示或选择「稍后配置」。
@@ -13,8 +27,6 @@ DeepSeek Harness 插件。Windows 桌面版把模式和项目名放在「应用�
 ```powershell
 & 'D:/DSH/resources/runtime/cli/bin/dsh.cmd' plugin --profile desktop add 'D:/DSH/LocalPlugins/dsh-thesis-editor-0.2.8.tgz'
 ```
-
-使用 DSH Web 时，把 `--profile desktop` 改为 `--profile web`。
 
 ## 把文件存到其他盘
 
